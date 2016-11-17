@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.3.1' # mirrored in .ruby-version for rbenv because heroku does not support rbenv
 
 gem 'sinatra', '~> 1.4.7'
 gem 'compass', '~> 1.0.3'
