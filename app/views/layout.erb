@@ -16,11 +16,14 @@
     <main>
       <%= yield %>
       <div class="clear"></div>
-      <p class="text text-smaller text-center">None of the credentials are stored, cached or logged on our servers.</p>
     </main>
 
     <footer class="clear">
-      <span>Twilio Messaging Interface - v<%= Version::VERSION %></span>
+      <p class="text text-smaller text-center">
+        None of the credentials are stored, cached or logged on our servers. ☆
+        Version <%= Version::VERSION %> ☆
+        <a href="https://github.com/b264/twilio-interface">Open Source software</a>
+      </p>
     </footer>
   </body>
 </html>

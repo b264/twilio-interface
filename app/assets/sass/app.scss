@@ -74,6 +74,14 @@ footer {
   text-align: center;
   font-size: 0.6em;
   color: #999999;
+  a { border-bottom: thin solid;
+      color: #999999;
+      font-weight: normal;
+      text-decoration: none;
+  }
+  a:visited { color: #999999; }
+  a:active { color: rgb(192,0,0); }
+  a:active, a:focus, a:hover { border-bottom-width: medium; }
 }
 
 .flash {

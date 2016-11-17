@@ -13,8 +13,15 @@ RSpec.describe 'index.erb', type: :view do
   it 'should contain title' do
     set_rendered_with locals: {account: {}}
 
-    expect(index_body).to have_text('Twilio Messaging Interface')
+    expect(index_body).to have_text('Messaging Interface')
   end
+
+  it 'should link source code' do
+    set_rendered_with locals: {account: {}}
+
+    expect(index_body).to have_link('Open Source software', href: /https:\/\//)
+  end
+
 
   context 'send message form' do
     it 'should exist' do
